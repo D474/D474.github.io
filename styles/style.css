@@ -1,0 +1,191 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+  overflow: hidden;
+  /* background-color: #FFFFFF; */
+  /* -webkit-animation: colorchange 60s infinite;
+  animation: colorchange 60s infinite; */
+}
+
+/* @-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+
+@keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+} */
+
+.background {
+position: absolute;
+top: 0px;
+left: 0px;
+/* height: device-height; */
+/* width: device-width; */
+}
+
+h1 {
+  position: absolute;
+  bottom: 7%;
+  right: 9%;
+  /* top: 2%;
+  left: 2%; */
+  color: white;
+}
+
+/* h4 {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  color: white;
+} */
+
+/* .data {
+  display: inline-block;
+  position: absolute;
+  top: 12%;
+  left: 7%;
+} */
+
+/* .data0 {
+  display: inline-block;
+  position: absolute;
+  top: 27%;
+  right: 7%;
+} */
+
+/* .data1 {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 47%;
+
+  top: 34%;
+  left: 50%;
+} */
+
+/* .data2 {
+  position: absolute;
+  top: 27%;
+  right: 12%;
+} */
+
+/* .technika2 {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+} */
+
+#mydiv0 {
+    /* position: absolute; */
+    z-index: 9;
+    /* background-color: #f1f1f1; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* display: inline-block; */
+    position: absolute;
+    top: 12%;
+    left: 7%;
+}
+
+#mydivheader0 {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px black , -2px -2px 4px black;
+
+    -webkit-animation: colorchange 60s infinite;
+    animation: colorchange 60s infinite;
+}
+
+.app {
+  /* position: absolute;
+  z-index: 10; */
+
+  /* z-index: 8; */
+  /* margin: 3px; */
+}
+
+#mydiv1 {
+    /* position: absolute; */
+    z-index: 9;
+    /* background-color: #f1f1f1; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* display: inline-block; */
+    position: absolute;
+    top: 23%;
+    /* top: 34%; */
+    left: 27%;
+    /* left: 50%; */
+
+    -webkit-animation: colorchange 60s infinite;
+    animation: colorchange 60s infinite;
+}
+
+/* #mydivheader1 {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px black , -2px -2px 4px black;
+} */
+
+/* #mydiv1 div {
+  cursor: move;
+}
+
+#mydivheader1 div {
+  cursor: move;
+} */
+
+#mydiv2 {
+    /* position: absolute; */
+    z-index: 9;
+    /* background-color: #f1f1f1; */
+    /* border: 1px solid #d3d3d3;
+    text-align: center; */
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* top: 23%; */
+    /* top: 34%; */
+    /* left: 27%; */
+    /* left: 50%; */
+
+    /* display: inline-block; */
+    position: absolute;
+    top: 50%;
+    /* top: 34%; */
+    right: 47%;
+    /* left: 50%; */
+}
+
+@-webkit-keyframes colorchange {
+   0%  {background: #33FFF3;}
+  25%  {background: #78281F;}
+  50%  {background: #117A65;}
+  75%  {background: #DC7633;}
+  100% {background: #9B59B6;}
+}
+
+@keyframes colorchange {
+   0%  {background: #33FFF3;}
+  25%  {background: #78281F;}
+  50%  {background: #117A65;}
+  75%  {background: #DC7633;}
+  100% {background: #9B59B6;}
+}

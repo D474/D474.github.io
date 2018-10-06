@@ -1,0 +1,25 @@
+
+
+Thu Sep 20 11:08:08 2018
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 4.15.0-34-generic (#37~16.04.1-Ubuntu SMP Tue Aug 28 10:44:06 UTC 2018) x86_64
+Compiler: GCC 5.3
+ext2fs lib: 1.42.13, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+/dev/sda: LBA, LBA48, DCO support
+/dev/sda: size       1953525168 sectors
+/dev/sda: user_max   1953525168 sectors
+/dev/sda: dco        1953525168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - WDC WD10JPVX-60JC3T1, S/N:WD-WX81AB74US88, FW:02.01A02
+Disk /dev/sdb - 61 GB / 57 GiB - CHS 59088 64 32 (RO), sector size=512 - Kingston DataTraveler 3.0, FW:PMAP
+
+Partition table type default to Intel
+Media is opened in read-only.
+Disk /dev/sdb - 61 GB / 57 GiB (RO) - Kingston DataTraveler 3.0
+Partition table type: None
+SIGINT detected! TestDisk has been killed.

@@ -1,0 +1,103 @@
+var vertexShader = document.getElementById('vertexShader').textContent;
+var fragmentShader = document.getElementById('fragmentShader').textContent;
+
+let clock = new THREE.Clock();
+let scene = new THREE.Scene();
+
+let colorsPerFace = [
+    "#FF0000", "#0000FF", "#00FF00", "#088FFE", "#03A6CE"
+];
+
+// from https://stackoverflow.com/a/5624139
+function hexToRgb(hex) {
+    let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return {
+        r: parseInt(result[1], 16) / 255,
+        g: parseInt(result[2], 16) / 255,
+        b: parseInt(result[3], 16) / 255
+    };
+}
+
+const vertices = [];
+const colors = [];
+const particleCount = 13000;
+
+const geometry = new THREE.BufferGeometry();
+
+for (let i = 0; i < particleCount; i++) {
+    const x = Math.floor(Math.random() * 1000 - 500);
+    const y = Math.floor(Math.random() * 1000 - 500);
+    const z = Math.floor(Math.random() * 1000 - 500);
+    vertices.push(x, y, z);
+
+    const rgbColor = hexToRgb(colorsPerFace[Math.floor(Math.random() * colorsPerFace.length)]);
+    colors.push(rgbColor.r, rgbColor.g, rgbColor.b);
+}
+
+const verticesArray = new Float32Array(vertices);
+geometry.addAttribute('position', new THREE.BufferAttribute(verticesArray, 3));
+
+const colorsArray = new Float32Array(colors);
+geometry.addAttribute('color', new THREE.BufferAttribute(colorsArray, 3));
+
+let uniforms = {
+    time: {
+        type: 'f',
+        value: 0.0
+    },
+    size: {
+        type: 'f',
+        value: 200.0
+    }
+};
+
+const material = new THREE.ShaderMaterial({
+    uniforms: uniforms,
+    vertexShader: vertexShader,
+    fragmentShader: fragmentShader,
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending
+});
+
+const points = new THREE.Points(geometry, material);
+scene.add(points);
+
+let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight);
+
+
+let renderer = new THREE.WebGLRenderer();
+renderer.setClearColor(0x000000);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.shadowMap.enabled = true;
+
+document.body.appendChild(renderer.domElement);
+
+let render = function () {
+    clock.getDelta();
+    let time = clock.elapsedTime * 0.2;
+
+    uniforms.time.value += 0.5;
+
+    let cameraDistance = 100;
+    camera.position.x = cameraDistance * Math.sin(time);
+    camera.position.z = cameraDistance * Math.cos(time);
+    camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+    renderer.render(scene, camera);
+
+    requestAnimationFrame(render);
+};
+
+onResize();
+render();
+
+window.addEventListener("resize", onResize);
+
+function onResize() {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(width, height);
+}

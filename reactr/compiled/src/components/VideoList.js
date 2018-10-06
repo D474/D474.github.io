@@ -1,0 +1,28 @@
+"use strict";
+
+var VideoList = function VideoList(_ref) {
+  var videos = _ref.videos,
+      handleVideoListEntryTitleClick = _ref.handleVideoListEntryTitleClick;
+  return React.createElement(
+    "div",
+    { className: "video-list" },
+    videos.map(function (video) {
+      return React.createElement(VideoListEntry, {
+        key: video.etag,
+        video: video,
+        handleVideoListEntryTitleClick: handleVideoListEntryTitleClick
+      });
+    })
+  );
+};
+
+// PropTypes tell other developers what `props` a component expects
+// Warnings will be shown in the console when the defined rules are violated
+VideoList.propTypes = {
+  videos: React.PropTypes.array.isRequired
+};
+
+// In the ES6 spec, files are "modules" and do not share a top-level scope.
+// `var` declarations will only exist globally where explicitly defined.
+window.VideoList = VideoList;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9jb21wb25lbnRzL1ZpZGVvTGlzdC5qc3giXSwibmFtZXMiOlsiVmlkZW9MaXN0IiwidmlkZW9zIiwiaGFuZGxlVmlkZW9MaXN0RW50cnlUaXRsZUNsaWNrIiwibWFwIiwidmlkZW8iLCJldGFnIiwicHJvcFR5cGVzIiwiUmVhY3QiLCJQcm9wVHlwZXMiLCJhcnJheSIsImlzUmVxdWlyZWQiLCJ3aW5kb3ciXSwibWFwcGluZ3MiOiI7O0FBQ0EsSUFBSUEsWUFBWSxTQUFaQSxTQUFZO0FBQUEsTUFBRUMsTUFBRixRQUFFQSxNQUFGO0FBQUEsTUFBVUMsOEJBQVYsUUFBVUEsOEJBQVY7QUFBQSxTQUNkO0FBQUE7QUFBQSxNQUFLLFdBQVUsWUFBZjtBQUNHRCxXQUFPRSxHQUFQLENBQVcsVUFBQ0MsS0FBRDtBQUFBLGFBQ1Ysb0JBQUMsY0FBRDtBQUNFLGFBQUtBLE1BQU1DLElBRGI7QUFFRSxlQUFPRCxLQUZUO0FBR0Usd0NBQWdDRjtBQUhsQyxRQURVO0FBQUEsS0FBWDtBQURILEdBRGM7QUFBQSxDQUFoQjs7QUFZQTtBQUNBO0FBQ0FGLFVBQVVNLFNBQVYsR0FBc0I7QUFDcEJMLFVBQVFNLE1BQU1DLFNBQU4sQ0FBZ0JDLEtBQWhCLENBQXNCQztBQURWLENBQXRCOztBQUlBO0FBQ0E7QUFDQUMsT0FBT1gsU0FBUCxHQUFtQkEsU0FBbkIiLCJmaWxlIjoiVmlkZW9MaXN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiXG52YXIgVmlkZW9MaXN0ID0gKHt2aWRlb3MsIGhhbmRsZVZpZGVvTGlzdEVudHJ5VGl0bGVDbGlja30pID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJ2aWRlby1saXN0XCI+XG4gICAge3ZpZGVvcy5tYXAoKHZpZGVvKSA9PlxuICAgICAgPFZpZGVvTGlzdEVudHJ5XG4gICAgICAgIGtleT17dmlkZW8uZXRhZ31cbiAgICAgICAgdmlkZW89e3ZpZGVvfVxuICAgICAgICBoYW5kbGVWaWRlb0xpc3RFbnRyeVRpdGxlQ2xpY2s9e2hhbmRsZVZpZGVvTGlzdEVudHJ5VGl0bGVDbGlja31cbiAgICAgIC8+XG4gICAgKX1cbiAgPC9kaXY+XG4pO1xuXG4vLyBQcm9wVHlwZXMgdGVsbCBvdGhlciBkZXZlbG9wZXJzIHdoYXQgYHByb3BzYCBhIGNvbXBvbmVudCBleHBlY3RzXG4vLyBXYXJuaW5ncyB3aWxsIGJlIHNob3duIGluIHRoZSBjb25zb2xlIHdoZW4gdGhlIGRlZmluZWQgcnVsZXMgYXJlIHZpb2xhdGVkXG5WaWRlb0xpc3QucHJvcFR5cGVzID0ge1xuICB2aWRlb3M6IFJlYWN0LlByb3BUeXBlcy5hcnJheS5pc1JlcXVpcmVkXG59O1xuXG4vLyBJbiB0aGUgRVM2IHNwZWMsIGZpbGVzIGFyZSBcIm1vZHVsZXNcIiBhbmQgZG8gbm90IHNoYXJlIGEgdG9wLWxldmVsIHNjb3BlLlxuLy8gYHZhcmAgZGVjbGFyYXRpb25zIHdpbGwgb25seSBleGlzdCBnbG9iYWxseSB3aGVyZSBleHBsaWNpdGx5IGRlZmluZWQuXG53aW5kb3cuVmlkZW9MaXN0ID0gVmlkZW9MaXN0O1xuIl19
