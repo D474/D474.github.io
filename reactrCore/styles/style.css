@@ -77,7 +77,8 @@ animation: colorchange 60s infinite;
   border: 0;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
   margin-top: 10px;
-  color: white;
+  color: powderblue;
+  font-size: 100%;
 }
 
 .video-list {
@@ -91,13 +92,13 @@ animation: colorchange 60s infinite;
 }
 
 .video-list-entry {
-  font-size: 16px;
+  font-size: 100%;
   padding: 8px;
 }
 
 .video-list-entry-title {
   font-weight: bold;
-  color: white;
+  color: lightgreen;
 }
 
 .video-list-entry-title:hover {
@@ -106,7 +107,7 @@ animation: colorchange 60s infinite;
 }
 
 .video-list-entry-detail {
-  font-size: 15px;
+  font-size: 75%;
   color: #999;
 }
 
