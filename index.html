@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <a href="https://D474media.webs.com"><h1>&nbsp&nbspD474media™<br>"...the greatest entertainment in the world..."</h1></a>
+    <a href="https://D474media.webs.com"><h1>&nbsp&nbspD474MEDIA™<br>"...the greatest entertainment in the world..."</h1></a>
     <!-- <a href="https://D474media.webs.com"><h1>D474media™<br>For the greatest entertainment...<br>In the world...</h1></a> -->
     <!-- <a href="redirect.html"><h4><br><br>Full video player app is available;<br>Just click the text seen here!</h4></a> -->
     <!-- <Link to='reactrCore/videoPlayer.html'><h4>display text</h4></Link> -->
@@ -154,11 +154,11 @@
       varying vec3 vColor;
 
       void main() {
-        float opacity = 200.0 / length(vMvPosition.xyz);
+        float opacity = 100.0 / length(vMvPosition.xyz);
 
         vec2 uv = gl_PointCoord.xy * 2.0 - 1.0;
 
-        float orb = 0.1 / length(vec2(0.0) - uv) * step(0.5, 1.0 - length(uv));
+        float orb = 0.3 / length(vec2(0.0) - uv) * step(0.5, 1.0 - length(uv));
         orb = smoothstep(0.0, 1.0, orb);
 
         vec3 color = vec3(orb) * vColor;

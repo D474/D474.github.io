@@ -11,11 +11,11 @@ body {
 
 @-webkit-keyframes colorchange {
 
- 0%  {background: #21618c;}
-25%  {background: #2e86c1;}
-50%  {background: #5dade2;}
-75%  {background: #2e86c1;}
-100% {background: #21618c;}
+ 0%  {background: #00FFE8;}
+25%  {background: #43FF00;}
+50%  {background: #5074D8;}
+75%  {background: #E19E17;}
+100% {background: #4DF89C;}
 }
 
 /* body {
@@ -32,8 +32,8 @@ animation: colorchange 60s infinite;
     100% {background: #800080;} */
 
 .navbar {
-  background: lime;
-  background-image: linear-gradient(-90deg, #00FF00, #008000);
+  background: #81F4B6;
+  background-image: linear-gradient(-90deg, #81F4B6, #008000);
   margin-bottom: 20px;
 }
 
@@ -72,7 +72,7 @@ animation: colorchange 60s infinite;
 
 .video-player-details {
   background: red;
-  background-image: radial-gradient(#B22222, #FF0000, #8B0000);
+  background-image: radial-gradient(#B22222, #B90909, #F61313);
   padding: 8px;
   border: 0;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
@@ -82,7 +82,7 @@ animation: colorchange 60s infinite;
 
 .video-list {
   background: red;
-  background-image: radial-gradient(#B22222, #FF0000, #8B0000);
+  background-image: radial-gradient(#B22222, #B90909, #F61313);
   padding: 8px;
   border: 0;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);

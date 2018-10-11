@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getYouTubeVideos('D474 rap music Jaime Orlando Cazares Valdez');
+    this.getYouTubeVideos('D474 Jaime Orlando Cazares Valdez (Remastered)');
   }
 
   getYouTubeVideos(query) {

@@ -47,7 +47,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-md-7">
             <VideoPlayer video={this.state.currentVideo}/>
-          </div><center><a style={{textShadow: '2px 2px 2px white , -2px -2px 2px white', textDecoration: 'none'}} href="../../../redirect.html">• &#128076; • Fullscreen YouTube™ App • &#9995; •</a></center><br></br>
+          </div><center><a style={{textShadow: '2px 2px 2px white , -2px -2px 2px white', textDecoration: 'none'}} href="../../../redirect.html">• &#128076; • 'FU115CR33N 4PP' • &#9995; •</a></center><br></br>
           {/*<div className="col-md-5">
             * It's very important to bind the context of this callback.
             * Also acceptable is to pass a anonymous function expression with a fat

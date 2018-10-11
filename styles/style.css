@@ -175,17 +175,17 @@ h1 {
 }
 
 @-webkit-keyframes colorchange {
-   0%  {background: #33FFF3;}
-  25%  {background: #78281F;}
-  50%  {background: #117A65;}
-  75%  {background: #DC7633;}
-  100% {background: #9B59B6;}
+   0%  {background: #FF0000;}
+  25%  {background: #FF9000;}
+  50%  {background: #D8FF00;}
+  75%  {background: #FF9000;}
+  100% {background: #FF0000;}
 }
 
 @keyframes colorchange {
-   0%  {background: #33FFF3;}
-  25%  {background: #78281F;}
-  50%  {background: #117A65;}
-  75%  {background: #DC7633;}
-  100% {background: #9B59B6;}
+   0%  {background: #FF0000;}
+  25%  {background: #FF9000;}
+  50%  {background: #D8FF00;}
+  75%  {background: #FF9000;}
+  100% {background: #FF0000;}
 }

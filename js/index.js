@@ -5,7 +5,7 @@ var clock = new THREE.Clock();
 var scene = new THREE.Scene();
 
 var colorsPerFace = [
-"#FF0000", "#0000FF", "#00FF00", "#088FFE", "#03A6CE"];
+"#FF0000", "#FF0000", "#FF0000", "#FF0000", "#FF0000"];
 
 
 // from https://stackoverflow.com/a/5624139
@@ -25,9 +25,9 @@ var particleCount = 13000;
 var geometry = new THREE.BufferGeometry();
 
 for (var i = 0; i < particleCount; i++) {
-    var x = Math.floor(Math.random() * 1000 - 500);
-    var y = Math.floor(Math.random() * 1000 - 500);
-    var z = Math.floor(Math.random() * 1000 - 500);
+    var x = Math.floor(Math.random() * 1000 - 100);
+    var y = Math.floor(Math.random() * 1000 - 800);
+    var z = Math.floor(Math.random() * 1000 - 700);
     vertices.push(x, y, z);
 
     var rgbColor = hexToRgb(colorsPerFace[Math.floor(Math.random() * colorsPerFace.length)]);
