@@ -38,16 +38,16 @@ class App extends React.Component {
         <nav className="navbar">
 
           <div className="col-md-6 offset-md-3">
-            <center><Search
+            <center><br></br><Search
               handleSearchInputChange={this.getYouTubeVideos.bind(this)}
-            /></center>
+            /><br></br></center>
           </div>
 
         </nav>
         <div className="row">
           <div className="col-md-7">
             <VideoPlayer video={this.state.currentVideo}/>
-          </div><center><a style={{textShadow: '2px 2px 2px white , -2px -2px 2px white', textDecoration: 'none'}} href="../../../redirect.html">• &#128076; • 'FU115CR33N 4PP' • &#9995; •</a></center><br></br>
+          </div><center><br></br><a href="../../../redirect.html"><button className="btn hidden-sm-down" style={{background: 'red', color:'black', textShadow: '2px 2px 2px white , -2px -2px 2px white', fontWeight: 'bold'}}>• &#128076; • Fullscreen Application • &#9995; •</button></a></center><br></br>
           {/*<div className="col-md-5">
             * It's very important to bind the context of this callback.
             * Also acceptable is to pass a anonymous function expression with a fat
