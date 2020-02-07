@@ -26,7 +26,7 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.getYouTubeVideos('D474 Nightmare (Remastered) Jaime Orlando Cazares Valdez');
+      this.getYouTubeVideos('D474 Nightmare (Remastered) Data The Destroyer');
     }
   }, {
     key: "getYouTubeVideos",
