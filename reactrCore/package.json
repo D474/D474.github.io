@@ -12,7 +12,7 @@
     "babelWatch": "babel . --out-dir compiled --presets=env,react --ignore=node_modules,compiled --source-maps inline --watch"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.2",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.5.0",
     "lodash": "^4.6.1",
     "react": "^0.14.7",
