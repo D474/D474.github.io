@@ -174,6 +174,23 @@ h1 {
     /* left: 50%; */
 }
 
+#mydiv3 {
+    /* position: absolute; */
+    z-index: 9;
+    /* background-color: #f1f1f1; */
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    /* display: inline-block; */
+    position: absolute;
+    top: 12%;
+    /* top: 34%; */
+    left: 70%;
+    /* left: 50%; */
+
+    -webkit-animation: colorchange 40s infinite;
+    animation: colorchange 40s infinite;
+}
+
 @-webkit-keyframes colorchange {
    0%  {background: #FF0000;}
   25%  {background: #FF9000;}
