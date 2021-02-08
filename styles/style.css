@@ -168,9 +168,11 @@ h1 {
 
     /* display: inline-block; */
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: 47%;
     /* top: 34%; */
-    right: 47%;
+    /* right: 47%; */
+    left: 40%;
     /* left: 50%; */
 }
 
