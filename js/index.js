@@ -5,7 +5,7 @@ var clock = new THREE.Clock();
 var scene = new THREE.Scene();
 
 var colorsPerFace = [
-"#FF0000", "#FF0000", "#FF0000", "#FF0000", "#FF0000"];
+"#f54242", "#09ff00", "#fbff00", "#6600ff", "#00ffee"];
 
 
 // from https://stackoverflow.com/a/5624139
